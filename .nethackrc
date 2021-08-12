@@ -1,2 +1,3 @@
 OPTIONS=windowtype:curses
+OPTIONS=perm_invent
 OPTIONS=noautopickup, time, hitpointbar
