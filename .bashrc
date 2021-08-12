@@ -5,6 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+## Environment variables ##
+
+export RANGER_LOAD_DEFAULT_RC=false
+
 ## Aliases ##
 
 alias ls='ls --color=auto'
@@ -14,13 +18,10 @@ alias cl='clear'
 alias fm='ranger'
 alias dots='/usr/bin/git --git-dir=/home/artem/.mydotfiles/ --work-tree=/home/artem'
 
-## Environment variables ##
-
-export RANGER_LOAD_DEFAULT_RC=false
-
 ## Prompt ##
 
-PS1='\[\e[96m[\u@\h \W]\$ \e[m\['
+#PS1='\[\e[96m[\u@\h \W]\$ \e[m\['
+PS1='[\u@\h \W]\$ '
 
 ## Pywal support ##
 
