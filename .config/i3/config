@@ -186,8 +186,8 @@ bar {
 exec --no-startup-id setxkbmap us,ru -option 'grp:caps_toggle'
 
 # Set wallpaper
-exec --no-startup-id wal -R
-#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/xfce/xfce-blue.jpg
+#exec --no-startup-id wal -R
+exec --no-startup-id feh --bg-scale $HOME/wallpapers/abstract-blue-concrete-ground-macro-3c-1920x1080.jpg
 
 # Picom
 exec --no-startup-id picom -b
@@ -198,7 +198,7 @@ gaps inner 10
 gaps outer 15
 
 # Polybar
-exec-always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec-always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
 
