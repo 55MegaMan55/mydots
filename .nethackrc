@@ -1,6 +1,7 @@
 OPTIONS=windowtype:curses
 OPTIONS=perm_invent
 OPTIONS=noautopickup, time, hitpointbar, showexp
+OPTIONS=runmode:walk
 
 ### COLORS
 
@@ -14,11 +15,11 @@ MENUCOLOR="blessed"=cyan&bold
 MENUCOLOR="cursed"=orange&bold
 MENUCOLOR="uncursed"=green
 
-MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
-MENUCOLOR="Amulet of Yendor named"=magenta # color only the real Amulet
+#MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
+MENUCOLOR="Amulet of Yendor named"=magenta
 MENUCOLOR="gold piece"=yellow
 
-MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta # forgotten spell
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta
 # This version will work on NAO.
 # MENUCOLOR="[a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta # forgotten spell
 
@@ -43,7 +44,7 @@ OPTIONS=hilite_status:characteristics/>8/brown
 OPTIONS=hilite_status:characteristics/>11/yellow
 OPTIONS=hilite_status:characteristics/>13/green
 OPTIONS=hilite_status:characteristics/>16/cyan
-OPTIONS=hilite_status:characteristics/>18/lightblue
+OPTIONS=hilite_status:characteristics/>18/blue
 
 # Hilight multiple encumbrance statuses.
 OPTIONS=hilite_status:carrying-capacity/burdened/yellow/stressed/orange
