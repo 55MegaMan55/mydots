@@ -1,7 +1,8 @@
 OPTIONS=windowtype:curses
 OPTIONS=perm_invent
-OPTIONS=noautopickup, time, hitpointbar, showexp
-OPTIONS=runmode:walk
+OPTIONS=noautopickup, time, hitpointbar
+OPTIONS=hilite_pet
+#OPTIONS=runmode:walk
 
 ### COLORS
 
@@ -11,9 +12,11 @@ OPTIONS=color
 
 OPTIONS=menucolors
 
-MENUCOLOR="blessed"=cyan&bold
-MENUCOLOR="cursed"=orange&bold
-MENUCOLOR="uncursed"=green
+MENUCOLOR="non\-?cursed"=brown&bold
+
+MENUCOLOR="\b[bB]lessed"=cyan&bold
+MENUCOLOR="\b[cC]ursed"=orange&bold
+MENUCOLOR="\b[uU]ncursed"=green
 
 #MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
 MENUCOLOR="Amulet of Yendor named"=magenta
