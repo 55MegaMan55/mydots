@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -202,24 +202,24 @@ gaps outer 15
 
 
 
-## Pywal support ##
-
-# Set colors from Xresources
-# Change 'color7' and 'color2' to whatever colors you want i3 to use 
-# from the generated scheme.
-# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
-# it fails to get colors from Xresources.
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
-
-# class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
-
-client.background       $bg
+### Pywal support ##
+#
+## Set colors from Xresources
+## Change 'color7' and 'color2' to whatever colors you want i3 to use 
+## from the generated scheme.
+## NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+## it fails to get colors from Xresources.
+#set_from_resource $fg i3wm.color7 #f0f0f0
+#set_from_resource $bg i3wm.color2 #f0f0f0
+#
+## class                 border  backgr. text indicator child_border
+#client.focused          $bg     $bg     $fg  $bg       $bg
+#client.focused_inactive $bg     $bg     $fg  $bg       $bg
+#client.unfocused        $bg     $bg     $fg  $bg       $bg
+#client.urgent           $bg     $bg     $fg  $bg       $bg
+#client.placeholder      $bg     $bg     $fg  $bg       $bg
+#
+#client.background       $bg
 
 
 
@@ -227,5 +227,5 @@ client.background       $bg
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+Mod4+b exec firefox
-bindsym $mod+Mod4+r exec "alacritty -e bash -ic ranger"
+bindsym $mod+Mod1+b exec firefox
+bindsym $mod+Mod1+r exec "alacritty -e bash -ic ranger"

@@ -25,10 +25,10 @@ PS1='[\u@\h \W]\$ '
 
 ## Pywal support ##
 
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
-
-wal-tile() {
-    wal -n -i "$@"
-    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
-}
+#(cat ~/.cache/wal/sequences &)
+#source ~/.cache/wal/colors-tty.sh
+#
+#wal-tile() {
+#    wal -n -i "$@"
+#    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+#}
